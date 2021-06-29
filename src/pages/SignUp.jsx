@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Amplify, { API, graphqlOperation } from '../../node_modules/aws-amplify'
 import { createTodo } from '../graphql/mutations'
 import { listTodos } from '../graphql/queries'
+import '../App.css';
 
 //Fortmatic
 import Fortmatic from 'fortmatic';
@@ -58,7 +59,7 @@ const SignUp = () => {
   }
 
   return (
-    <div style={styles.container}>
+    <div style={styles.container} backgroundColor='blue' >
       <h2>Create Account</h2>
       <input
         onChange={event => setInput('name', event.target.value)}
@@ -87,7 +88,6 @@ const SignUp = () => {
           <div key={todo.id ? todo.id : index} style={styles.todo}>
             <p style={styles.todoName}>{todo.name}</p>
             <p style={styles.todoDescription}>{todo.description}</p>
-
           </div>
         ))
       }
@@ -101,9 +101,20 @@ const styles = {
   container: { width: 400, margin: '0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 20 },
   todo: {  marginBottom: 15 },
   input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
+  addressInput: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
   todoName: { fontSize: 20, fontWeight: 'bold' },
   todoDescription: { marginBottom: 0 },
-  button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' }
+  button: { 
+      backgroundColor: '#007bff   ', 
+      color: 'white', 
+      outline: 'none', 
+      fontSize: 18, 
+      padding: '12px 0px', 
+      borderTopLeftRadius: '1rem',
+      borderTopRightRadius: '1rem',
+      borderBottomLeftRadius: '1rem',
+      borderBottomRightRadius: '1rem'}
+
 }
 
 export default SignUp;
