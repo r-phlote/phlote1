@@ -35,11 +35,20 @@ window.web3 = web3;
 function App() {
 
   return (
+    
     <div className="App">
-      <header className="App-header">
+      
+        <header className="App-header">
+        
+
+  
+         
+        <iframe className = "video-background" title="WIP - Sea Surface Temperature" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/10074333d322466493fa6afc95b68829/embed?autostart=1&ui_animations=0&ui_infos=0&ui_stop=0&ui_inspector=0&ui_hint=0&ui_ar=0&ui_help=0&ui_settings=0&ui_vr=0&ui_fullscreen=0&ui_annotations=0&ui_theme=dark"> </iframe>
+            
         <img src={logo} className="App-logo" alt="logo" />
+        
         <h1>Join Phlote</h1>
-        <div> 
+        <div>
           <Button href="https://www.phlote.co">Phlote Main Page</Button> {' '}
           <Link to = '/SignUp'>
             <Button> 
@@ -47,7 +56,9 @@ function App() {
             </Button>{}
           </Link>
         </div>
-      </header>
+            
+          
+        </header>
     </div>
   );
 }

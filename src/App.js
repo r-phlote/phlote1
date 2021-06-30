@@ -13,14 +13,17 @@ import SignUp from "./pages/SignUp";
 class App extends Component {
   render () {
     return (
-      <div classname="App">
+      <div className="App">
+
         <Router>
           <Switch>
             <Route exact path="/" component = {MainPage}/>
             <Route exact path="/SignUp" component = {SignUp}/>
           </Switch>
         </Router>
-      </div>
+        </div>
+        
+  
     )
   }
 
