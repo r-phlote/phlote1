@@ -1,10 +1,10 @@
 import React, {Component} from "react";
 import logo from '../vinyl-disc.svg';
 import '../App.css';
-import Link from 'react-dom';
-import { useHistory } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import SignUp from "./SignUp"
+//import Link from 'react-dom';
+//import { useHistory } from "react-router-dom";
+//import Button from "react-bootstrap/Button";
+//import SignUp from "./SignUp"
 
 //Fortmatic
 //import Fortmatic from 'fortmatic';
